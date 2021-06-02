@@ -95,6 +95,7 @@ pid_t sys_thread_create(
     void *arg,
     void *thread_entry)
 {
+    keprint(PRINT_DEBUG "sys_thread_create\n");
     if (!attr || !func || !thread_entry)
         return -EINVAL;
 
